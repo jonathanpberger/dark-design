@@ -4,7 +4,7 @@ class: center middle
 
 ---
 
-# Towards a Theory & Methodology of <br/> Test-Driven Design
+# Towards a Theory & Methodology of <br /> Test-Driven Design <br />(and: Pair-design!!)
 
 Jonathan Berger, 2015
 
@@ -142,6 +142,7 @@ I. What are the benefits of TDD?
 
 II. How does TDD work?
 
+II.V ASIDE: On Pairing
 
 III. How could we Test-Drive Design?
 
@@ -461,11 +462,17 @@ class: center, middle
 
 ---
 
+class: center, middle, aside
+
+# II.V Pairing
+
+---
+
+---
+
 class: center, middle, inverse
 
 # III. How could we <br/> Test-drive design?
-
-???
 
 ---
 
@@ -823,6 +830,7 @@ name: resources
 [spandrels]:http://en.wikipedia.org/wiki/Spandrel_%28biology%29
 [cargo cult design]:https://twitter.com/hashtag/CargoCultDesign?src=hash
 [xp-explained]:http://www.amazon.com/Extreme-Programming-Explained-Embrace-Edition/dp/0321278658
+[starting to pair-design]:http://pivotallabs.com/benefits-of-pair-design/
 
 ---
 
