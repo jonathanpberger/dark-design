@@ -31,7 +31,7 @@
 
 /* ###### Helvetica Styles */
 
-body { 
+body {
   font-family: 'Helvetica';
   font-family: 'Ars';
 }
@@ -42,9 +42,10 @@ h1, h2, h3, .f1, .f2, .f3 {
   font-weight: bold;
 }
 
-.f1,
-body .remark-slide-content h1 {
-  font-size: 4em;
+
+body .remark-slide-content h1,
+body .remark-slide-content .f1 {
+  font-size: 80px;
   line-height: 0.9em;
   text-transform: uppercase;
 }
@@ -82,7 +83,7 @@ body .remark-slide-content blockquote p {
   font-style: italic;
   font-family: courier;
   font-size: 1.5em;
-  
+
 }
 
 body .remark-slide-content p a {
@@ -100,5 +101,5 @@ body .remark-slide-content a:hover {
 body .remark-slide-content a,
 body .remark-slide-content a:visited {
   color: #000;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
