@@ -12,21 +12,16 @@ Agile2015
 
 ---
 
-# Who Am I?
+.f1[Who Am I?]
 
 - [@jonathanpberger](http://jonathanpberger.com)
 - design, code, pm
 - ~30 agile projects since 2008
 - interested in agile practice for design
-- Brooklyn born & (mostly) raised
 
 ---
 
-
-<!-- - trim "why" intro around "designers have a problem too"
- -->
-
-# What hurts in Design?
+.f1[What hurts in Design?]
 
 --
 .de-em-list[
@@ -62,7 +57,7 @@ Agile2015
 ---
 class: center, middle
 
-# Origin Story
+.f1[Origin Story]
 
 ???
 
@@ -75,7 +70,7 @@ class: center, middle
 
 class: center, middle
 
-# I witnessed Agile making engineers happy
+.f1[I witnessed Agile making engineers happy]
 
 ???
 
@@ -84,11 +79,11 @@ class: center, middle
 
 ---
 class: inverse, center, middle
-# how does that work?
+.f1[how does that work?]
 
 ---
 
-# Pairing enables happiness
+.f1[Pairing enables happiness]
 
 --
 
@@ -102,7 +97,7 @@ class: inverse, center, middle
 
 ---
 
-# Test-Driving enables pairing
+.f1[Test-Driving enables pairing]
 
 --
 
@@ -116,7 +111,7 @@ class: inverse, center, middle
 
 ---
 
-# so...
+.f1[so...]
 
 --
 
@@ -131,7 +126,7 @@ class: inverse, center, middle
 
 class: center, middle, greenbg
 
-# How do we enable TDD for Design?
+.f1[How do we enable TDD for Design?]
 
 
 ???
