@@ -103,3 +103,11 @@ body .remark-slide-content a:visited {
   color: #000;
   /*text-decoration: none;*/
 }
+
+.imageslide img {
+  max-height: 500px;
+}
+
+.imagecell img {
+  max-height: 200px;
+}
