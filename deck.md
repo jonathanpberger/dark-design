@@ -124,27 +124,27 @@ class: inverse, center, middle
 - and test-driven development ("TDD") enables pairing,
 ---
 
-class: center, middle, greenbg
+class: middle, inverse
 
-.f1[How do we enable TDD for Design?]
+.f1[How do we enable .green[TDD], <br/>which enables .green[Pairing], <br/>which enables .green[Happiness], <br/>for Design?]
 
 
 ???
 
-LET THIS QUESTION HANG
+- LET THIS QUESTION HANG
+- talk about "happy devs" as a goal for the Ruby language
 
 ---
 
 # Agenda
 
-I. What are the benefits of TDD?
+I. What we talk about when we talk about Pair Design
 
+II. What are the benefits of TDD?
 
-II. How does TDD work?
+III. How does TDD work?
 
-II.V ASIDE: On Pairing
-
-III. How could we Test-Drive Design?
+IV. How could we Test-Drive Design?
 
 ---
 
@@ -159,6 +159,217 @@ class: center, middle, warning
 
 ---
 
+class: center, middle, warning
+
+.f2[Testing .de-em[vs.] User Testing .de-em[vs.] Test-Driving]
+
+---
+
+class: center, middle, inverse
+
+# I. What we talk about when we talk about "Pair Design"
+
+---
+
+class: imagecell
+
+## What does pairing look like?
+
+|                                                |                                          |                                                  |                                                        |                                                |
+| -                                              | -                                        | -                                                | -----------------                                      | ------------                                   |
+| Pairing at scale                               | Synth / Gen                              | Sitting/Standing                                 | Design Office Hours                                    | Hurricane Sandy                                |
+| ![Office Pairing](images/office-pairing-2.gif) | ![Synth / Gen](images/synth-gen.gif)     | ![Sitting Standing](images/sitting-standing.gif) | ![Design Office Hours](images/design-office-hours.gif) | ![Hurricane Sandy](images/hurricane-sandy.gif) |
+| Remote Pairing                                 | design pair                              | "tete-a-tete"                                    | Stunt Pairing                                          |                                                |
+| ![Remote Pairing](images/remote-pairing.gif)   | ![Design Pair](images/design-pair-1.gif) | ![Tete-a-tete](images/tete-a-tete.gif)           | ![Stunt Pairing](images/stunt-pairing.gif)             |                                                |
+
+---
+
+# How is design different for Agile?
+
+- engineers build quickly, change rapidly
+- demands different than what designers are accustomed to
+- execution + enablement
+
+---
+
+## How to make design for agile successful?
+- focus on the right questions
+- keep pace with engineers
+- build beautiful, functional product
+- enable clients to do the same
+
+---
+class: center, middle
+
+# Why Pair Design?
+
+---
+## Better (Product) Design
+- reduce the cost of change
+- encourage convention, reduce trivial decisions
+- reduce waste
+
+
+---
+
+## Better Designers
+- promotes learning
+- knowledge-transfer
+- continuous improvement
+
+---
+
+## Better Teams
+- help teams start from shared foundation
+- make decisions collaboratively
+- externalize and validate thinking
+
+---
+
+## Better Projects
+- fresh eyes
+- mesh complementary skill sets
+- better Bus Count
+- easier ramp-up
+- facilitate rotation
+
+---
+
+## Better Product
+- optimize for progress (not perfection)
+- remove individual ego
+- promote shared ownership of product
+
+---
+
+# How do we Pair design?
+
+- similar techniques and philosophies as engineering
+- design is different BUT
+- core principles of communication, tight feedback loops
+- Pair design takes a few forms. The three major standbys are:
+
+---
+
+## "Synth/Gen" Whiteboard pairing
+
+- two people, one marker (cursor)
+
+---
+class: imageslide
+![Synth / Gen](images/synth-gen.gif)
+
+- two people, one marker (cursor)
+- "Generator" has marker in hand, generate ideas
+- "Synthesizer" stands back, asking, probing, edge cases, big picture
+
+---
+class: imageslide
+![Synth / Gen](images/synth-gen2.gif)
+
+- map out feature sets or user-flows at about the epic level of granularity.
+
+---
+
+## Medium-Fidelity Illustrator Pairing
+
+- when whiteboard-fidelity is no longer sufficient to make design decisions
+
+---
+class: imageslide
+
+![Design Pair](images/design-pair-1.gif)
+
+- two visual designers building a Visual Design System
+
+---
+class: imageslide
+
+![Design Pair](images/design-pair-2.gif)
+
+- i.e. building a visual metaphor for the object domain that they're mapping onto the product
+
+---
+class: imageslide
+
+![Design Pair](images/design-pair-3.gif)
+
+- two mice plugged into one copy of illustrator
+- trade off control of the cursor
+
+---
+class: imageslide
+
+![Design Pair](images/design-pair-4.gif)
+
+- designers discuss the design challenge
+- occasionally turn to the computer
+- test out a feeling, illustrate an idea, or enshrine a decision.
+
+
+---
+
+## Stylesheet Pairing
+- often called "cross-functional pairing"
+- that's a misnomer
+
+---
+class: imageslide
+
+![Office Pairing](images/office-pairing-2.gif)
+
+- two designers in the text editor, in the browser
+- working on markup
+
+---
+class: imageslide
+
+![Office Pairing](images/office-pairing.gif)
+
+- enshrine design decisions
+- implement them on the front end of the site
+
+???
+
+Pairing also introduces advantages which aren't available to solo design.
+
+- When designing in front of working software (rather than static mock-ups), designers are able to generatively experiment and design in real-time.
+- They can play more easily and natively with interactions, make changes at full-fidelity, and be creative in a way that's impossible in a mock-up.
+
+## Cross-functional pairing
+
+- difference w/ cross functional pairing:
+- 2x designers pairing together == some skill transfer but similar perspective
+- designer + developer == a lot more skill transfer,
+
+---
+
+## Benefits of Cross-Functional pairing
+
+- no need to reproduce the design in mock-ups (time-consuming)
+- no time spent marking up (for designer) and decoding (for developers) redlines
+- developer learns the rationales behind the design decisions
+- designer & dev move from adversarial context to collaborative context
+- better unit cohesion, better bus-count, better collective ownership
+
+---
+
+# When do we pair?
+
+- Dev == 100% pairing, design <100%
+- Pairing is valuable whenever design decisions are being made
+- documenting decisions made by the pair: divide and conquer (2x speed for the dull stuff!)
+
+---
+
+## Switch-hit pairing
+
+- two projects, two designers
+- solo mostly, but have context
+- support each other when decisions need to be made
+- block out ~1hr / day
+
+---
 class: center, middle
 
 .f2[Testing .de-em[vs.] User Testing .de-em[vs.] Test-Driving]
@@ -167,7 +378,7 @@ class: center, middle
 
 class: center, middle, inverse
 
-# I. The Benefits of TDD
+# II. The Benefits of TDD
 
 ---
 
@@ -461,232 +672,6 @@ class: center, middle
 - provides a model for breaking down a big activity {dev,design}
 - testing pyramid describes ratio
 - more later
-
----
-class: middle, center, inverse
-
-.f1[(an aside)]
-
----
-
-class: center, middle, inverse
-
-# What do we talk about when we talk about "Pair Design"?
-
----
-class: imagecell, inverse
-
-## What does pairing look like?
-
-|                                                |                                          |                                                  |                                                        |                                                |
-| -                                              | -                                        | -                                                | -----------------                                      | ------------                                   |
-| ![Office Pairing](images/office-pairing-2.gif) | ![Synth / Gen](images/synth-gen.gif)     | ![Sitting Standing](images/sitting-standing.gif) | ![Design Office Hours](images/design-office-hours.gif) | ![Hurricane Sandy](images/hurricane-sandy.gif) |
-| Pairing at scale                               | Synth / Gen                              | Sitting/Standing                                 | Design Office Hours                                    | Hurricane Sandy                                |
-| ![Remote Pairing](images/remote-pairing.gif)   | ![Design Pair](images/design-pair-1.gif) | ![Tete-a-tete](images/tete-a-tete.gif)           | ![Stunt Pairing](images/stunt-pairing.gif)             |                                                |
-| Remote Pairing                                 | design pair                              | "tete-a-tete"                                    | Stunt Pairing                                          |                                                |
-
----
-
-class: center, middle, aside
-
-# II.V Pair Design for Fun and Profit
-
----
-
-# How is design different for Agile?
-
-- engineers build quickly, change rapidly
-- demands different than what designers are accustomed to
-- execution + enablement
-
----
-
-## How to make design for agile successful?
-- focus on the right questions
-- keep pace with engineers
-- build beautiful, functional product
-- enable clients to do the same
-
----
-class: center, middle
-
-# Why Pair Design?
-
----
-## Better (Product) Design
-- reduce the cost of change
-- encourage convention, reduce trivial decisions
-- reduce waste
-
-
----
-
-## Better Designers
-- promotes learning
-- knowledge-transfer
-- continuous improvement
-
----
-
-## Better Teams
-- help teams start from shared foundation
-- make decisions collaboratively
-- externalize and validate thinking
-
----
-
-## Better Projects
-- fresh eyes
-- mesh complementary skill sets
-- better Bus Count
-- easier ramp-up
-- facilitate rotation
-
----
-
-## Better Product
-- optimize for progress (not perfection)
-- remove individual ego
-- promote shared ownership of product
-
----
-
-# How do we Pair design?
-
-- similar techniques and philosophies as engineering
-- design is different BUT
-- core principles of communication, tight feedback loops
-- Pair design takes a few forms. The three major standbys are:
-
----
-
-## "Synth/Gen" Whiteboard pairing
-
-- two people, one marker (cursor)
-
----
-class: imageslide
-![Synth / Gen](images/synth-gen.gif)
-
-- two people, one marker (cursor)
-- "Generator" has marker in hand, generate ideas
-- "Synthesizer" stands back, asking, probing, edge cases, big picture
-
----
-class: imageslide
-![Synth / Gen](images/synth-gen2.gif)
-
-- map out feature sets or user-flows at about the epic level of granularity.
-
----
-
-## Medium-Fidelity Illustrator Pairing
-
-- when whiteboard-fidelity is no longer sufficient to make design decisions
-
----
-class: imageslide
-
-![Design Pair](images/design-pair-1.gif)
-
-- two visual designers building a Visual Design System
-
----
-class: imageslide
-
-![Design Pair](images/design-pair-2.gif)
-
-- i.e. building a visual metaphor for the object domain that they're mapping onto the product
-
----
-class: imageslide
-
-![Design Pair](images/design-pair-3.gif)
-
-- two mice plugged into one copy of illustrator
-- trade off control of the cursor
-
----
-class: imageslide
-
-![Design Pair](images/design-pair-4.gif)
-
-- designers discuss the design challenge
-- occasionally turn to the computer
-- test out a feeling, illustrate an idea, or enshrine a decision.
-
-
----
-
-## Stylesheet Pairing
-- often called "cross-functional pairing"
-- that's a misnomer
-
----
-class: imageslide
-
-![Office Pairing](images/office-pairing-2.gif)
-
-- two designers in the text editor, in the browser
-- working on markup
-
----
-class: imageslide
-
-![Office Pairing](images/office-pairing.gif)
-
-- enshrine design decisions
-- implement them on the front end of the site
-
-???
-
-Pairing also introduces advantages which aren't available to solo design.
-
-- When designing in front of working software (rather than static mock-ups), designers are able to generatively experiment and design in real-time.
-- They can play more easily and natively with interactions, make changes at full-fidelity, and be creative in a way that's impossible in a mock-up.
-
-## Cross-functional pairing
-
-- difference w/ cross functional pairing:
-- 2x designers pairing together == some skill transfer but similar perspective
-- designer + developer == a lot more skill transfer,
-
----
-
-## Benefits of Cross-Functional pairing
-
-- no need to reproduce the design in mock-ups (time-consuming)
-- no time spent marking up (for designer) and decoding (for developers) redlines
-- developer learns the rationales behind the design decisions
-- designer & dev move from adversarial context to collaborative context
-- better unit cohesion, better bus-count, better collective ownership
-
----
-
-# When do we pair?
-
-- Dev == 100% pairing, design <100%
-- Pairing is valuable whenever design decisions are being made
-- documenting decisions made by the pair: divide and conquer (2x speed for the dull stuff!)
-
----
-
-## Switch-hit pairing
-
-- two projects, two designers
-- solo mostly, but have context
-- support each other when decisions need to be made
-- block out ~1hr / day
-
----
-
-class: center, middle, inverse
-
-# II.v </ END ASIDE >
-
-???
-
-Back to the main story: TDD'ing design
 
 ---
 
