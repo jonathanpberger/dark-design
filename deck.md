@@ -33,6 +33,7 @@ class: imageslide
 
 .f1[What hurts in Design?]
 
+--
 ![The oatmeal](images/oatmeal.png)
 
 ---
@@ -164,23 +165,6 @@ IV. How could we Test-Drive Design?
 
 ---
 
-class: center, middle, warning
-
-## WARNING: "Testing" is a messy word.
-
-???
-
-- In the design context, it usually means User Testing
-- User Testing is a part of this, but we're talking about a lot more
-
----
-
-class: center, middle, warning
-
-.f2[Testing .de-em[vs.] User Testing .de-em[vs.] Test-Driving]
-
----
-
 class: center, middle, inverse
 
 # I. What we talk about when we talk about "Pair Design"
@@ -198,13 +182,27 @@ class: imagecell
 | Remote Pairing                                 | design pair                              | "tete-a-tete"                                    | Stunt Pairing                                          |                                                |
 | ![Remote Pairing](images/remote-pairing.gif)   | ![Design Pair](images/design-pair-1.gif) | ![Tete-a-tete](images/tete-a-tete.gif)           | ![Stunt Pairing](images/stunt-pairing.gif)             |                                                |
 
+
+???
+
+- Pairing is an agile concept
+- agile and design have a rocky history
+- let's talk about it
+
 ---
+
+
 
 # How is design different for Agile?
 
 - engineers build quickly, change rapidly
 - demands different than what designers are accustomed to
 - execution + enablement
+
+???
+
+- execution isn't enough; enablement is key
+- pairing started w/ continuous code review
 
 ---
 
@@ -220,41 +218,45 @@ class: center, middle
 # Why Pair Design?
 
 ---
-## Better (Product) Design
-- reduce the cost of change
-- encourage convention, reduce trivial decisions
-- reduce waste
 
+name: better
+.left-half[
+### Better (Product) Design
+- Reduce the cost of change
+- Encourage convention, reduce trivial decisions
+- Reduce waste
+
+### Better Designers
+- Promotes learning
+- Knowledge-transfer
+- Continuous improvement
+
+]
+
+.right-half[
+
+### Better Teams
+- Help teams start from shared foundation
+- Make decisions collaboratively
+- Externalize and validate thinking
+
+
+### Better Projects
+- Fresh eyes
+- Mesh complementary skill sets
+- Better Bus Count
+- Easier ramp-up
+- Facilitate rotation
+
+]
 
 ---
 
-## Better Designers
-- promotes learning
-- knowledge-transfer
-- continuous improvement
-
----
-
-## Better Teams
-- help teams start from shared foundation
-- make decisions collaboratively
-- externalize and validate thinking
-
----
-
-## Better Projects
-- fresh eyes
-- mesh complementary skill sets
-- better Bus Count
-- easier ramp-up
-- facilitate rotation
-
----
-
-## Better Product
+# Better Product
 - optimize for progress (not perfection)
 - remove individual ego
 - promote shared ownership of product
+
 
 ---
 
@@ -378,15 +380,31 @@ Pairing also introduces advantages which aren't available to solo design.
 
 ---
 
-## Switch-hit pairing
+# Pair Design
 
-- two projects, two designers
-- solo mostly, but have context
-- support each other when decisions need to be made
-- block out ~1hr / day
+- benefits products & projects & people
+- already happening
+- still a long way to go
+
+???
+
+- need to make it easier to know *when* and *how* to pair
+- this is where TDD comes in
 
 ---
-class: center, middle
+
+class: center, middle, warning
+
+## WARNING: "Testing" is a messy word.
+
+???
+
+- In the design context, it usually means User Testing
+- User Testing is a part of this, but we're talking about a lot more
+
+---
+
+class: center, middle, warning
 
 .f2[Testing .de-em[vs.] User Testing .de-em[vs.] Test-Driving]
 
