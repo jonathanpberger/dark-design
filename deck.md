@@ -4,7 +4,15 @@ class: center middle
 
 ---
 
-# Towards a Theory & Methodology of <br /> Test-Driven Design <br />(and: Pair-design!!)
+# Towards a Theory & Methodology of <br /> Test-Driven Design <br /><br/><br/>
+
+Jonathan Berger, 2015
+
+Agile2015
+
+---
+
+# Towards a Theory & Methodology of <br /> Test-Driven Design <br />.green[(Now with 100% more Pair-design!!)]
 
 Jonathan Berger, 2015
 
@@ -15,9 +23,17 @@ Agile2015
 .f1[Who Am I?]
 
 - [@jonathanpberger](http://jonathanpberger.com)
+- i help people build {products, teams}
 - design, code, pm
 - ~30 agile projects since 2008
 - interested in agile practice for design
+
+---
+class: imageslide
+
+.f1[What hurts in Design?]
+
+![The oatmeal](images/oatmeal.png)
 
 ---
 
@@ -124,7 +140,7 @@ class: inverse, center, middle
 - and test-driven development ("TDD") enables pairing,
 ---
 
-class: middle, inverse
+class: middle
 
 .f1[How do we enable .green[TDD], <br/>which enables .green[Pairing], <br/>which enables .green[Happiness], <br/>for Design?]
 
@@ -416,7 +432,7 @@ class: de-em-list
 
 class: center, middle, inverse
 
-# II. How does TDD work?
+# III. How does TDD work?
 
 ---
 class: middle
@@ -677,7 +693,7 @@ class: center, middle
 
 class: center, middle, inverse
 
-# III. How could we <br/> Test-drive design?
+# IV. How could we <br/> Test-drive design?
 
 ---
 
@@ -1039,14 +1055,6 @@ name: resources
 
 ---
 
-# Thanks Again!
-
-- <http://jonathanpberger.com/talks>
-- Say hi on twitter at `@jonathanpberger`
-- or `jonathanpberger` on github, gmail, forrst, etc...
-
----
-
 name: pairing extras
 
 # Pairing Extras!!
@@ -1083,9 +1091,6 @@ name: pairing extras
 
 ---
 
-
----
-
 ## Balanced Team & Pairing
 - these are not existential claims
 - It's not  "I am a developer I was born that way" or trained that way,
@@ -1114,17 +1119,9 @@ name: pairing extras
 
 ---
 
-## pairing links
+# Thanks Again!
 
-### <http://pivotallabs.com/minimum-viable-deliverable/>
-### <http://pivotallabs.com/dry-documentation>
-### <http://pivotallabs.com/big-design-refactor/>
-
-
-[Minimum Viable]: <http://pivotallabs.com/minimum-viable-deliverable/>
-[DRY documentation]: <http://pivotallabs.com/dry-documentation>
-[different rhythms]: <http://pivotallabs.com/big-design-refactor/>
-
-
-
+- <http://jonathanpberger.com/talks>
+- Say hi on twitter at `@jonathanpberger`
+- or `jonathanpberger` on github, gmail, forrst, etc...
 
