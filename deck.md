@@ -4,7 +4,9 @@ class: center middle
 
 ---
 
-# Using Dark Design patterns (for good!) in Agile UX practice.
+# The Lighter Side of Dark Design
+
+## Using Dark Design patterns (for good!) in Agile UX practice.
 
 Jonathan Berger, 2015
 
@@ -17,22 +19,31 @@ SpooOOOOooooky October Meetup, 2015
 
 ---
 
-# It's a *technique*, not a value claim
+# Dark != Evil
+
+![Evil By Design](images/evil_by_design.png)
+
+???
+
+- Chris Nodder wrote this nice book
+- outlines lots of evil patterns
 
 ---
 
-# It's not always bad
+# Dark Design is a *technique*, not a value claim
 
 ---
 
-# Case study: cops
+class: greenbg
+
+### Case study:
+
+# cops & witness identification
 
 ---
 
 # the client
 
-
-???
 
 - philanthropic foundation
 - focused on social justice
@@ -40,11 +51,38 @@ SpooOOOOooooky October Meetup, 2015
 
 ---
 
-# Wrongful convictions
+# What's the most bad?
+
+
+--
+
+
+
+class: warning
+
+
+
+.f1[death-row inmates subsequently exonerated by DNA evidence]
+
+
+---
+
+# Leading cause?
+
+
+--
+
+
+- Jailhouse snitching
+
+
+--
+
+
+- Faulty witness ID
 
 ???
 
-- death row inmates exonerated by DNA evidence
 - lots of social science wrt bias, lineups
 - easy to study? who cares!
 - spare innocent people from death row!
@@ -53,13 +91,23 @@ SpooOOOOooooky October Meetup, 2015
 
 # the app
 
---
-
-- cops create a lineup
 
 --
 
-- witnesses pick the suspect out of the lineup
+
+- Cops create a lineup
+
+
+--
+
+
+- Witnesses pick the suspect out of the lineup
+
+
+--
+
+
+- Court sees witness ID firsthand
 
 
 ???
@@ -68,108 +116,380 @@ SpooOOOOooooky October Meetup, 2015
 
 ---
 
-![The Usual Suspects](usual_suspects.jpg)
+class: small-image
+
+## What do you think of when you hear "lineup"?
+
+
+--
+
+
+class: center
+
+
+![The Usual Suspects](images/usual_suspects.jpg)
 
 ???
 
 - This is many ppl think of when we hear "lineup"
-
----
-
-# The Science
-
-- Simultaneous Array
-- Sequential Array
+- "Simultanous array"
 
 
 ---
 
-# using dark design
+class: warning
+
+### e.g.,
+
+# Let's say You're a witness to a crime: a man snatches a bag and runs off.
+
+???
+- cop interviews witnesses
+- they want to ID the suspect
+- one suspect photo, the rest are "filler"
 
 ---
 
-# example
+## Simultaneous Array vs. Sequential Array
+
+- In simultaneous lineups, witnesses must use "relative judgment" to compare lineup photographs to **each other**.
+
+- For sequential lineups, witnesses must exercise "absolute judgment," comparing each photograph to their **memory of the offender**.
+
+.right[[National Institute of Justice](http://www.nij.gov/topics/law-enforcement/investigations/eyewitness-identification/pages/simultaneous-sequential.aspx)]
+
+---
+
+class: small-text
+
+> Investigated the effectiveness of sequential lineup presentation as a means of reducing false identifications with little or no loss in accurate identifications.
+
+> A crime was staged for 240 unsuspecting eyewitnesses (undergraduates) either individually or in pairs. One-fourth of the Ss attempted identifications in each of 4 lineup conditions: 6 pictures were presented either simultaneously, as used in traditional procedures, or sequentially, in which yes/no judgments were made for each picture; each procedure either contained the photograph of the criminal–confederate or a picture of a similar looking replacement.
+
+> Results indicate that sequential lineup presentation significantly reduced false identifications but did not significantly influence correct identifications when compared with a simultaneous procedure. **It is concluded that sequential presentation of lineups can reduce false identifications of innocent suspects by reducing eyewitnesses' reliance on relative-judgment processes.**
+
+> .right[[Improving eyewitness identifications from lineups: Simultaneous versus sequential lineup presentation.
+Lindsay, R. C.; Wells, Gary L.
+Journal of Applied Psychology, Vol 70(3), Aug 1985, 556-564.](http://dx.doi.org/10.1037/0021-9010.70.3.556)]
+
+???
+
+- here is a fancy citation
+- it says sequential lineups are better
+
+---
+
+class: warning
+
+
+# Witness description
+
+> White male, middle aged, dark hair. Medium height, medium build.
+
+---
+
+## Simultaneous Array
+
 
 --
 
-## Story: Officer can select fillers
 
-When the officer is on the lineup edit screen, she will see as the bottom section of that screen, "Fillers".
 
-She should have the ability to select fillers either through sideloading (iOS imported/cameral roll photos) or from our in-application photo database.
+![Simultaneous Lineup](images/simultaneous-lineup.jpg)
 
-If she chooses the photo database:
+---
 
-If the witness description or suspect has been entered, a search query will be synthesized based on that data and she will go directly to the Filler selection screen. If she has previously been through filler selection for this lineup, the previous search will be saved and re-executed (or results cached, I don't care right now) when she enters the screen.
+## Simultaneous Array
 
-If neither witness description nor suspect has been entered, she will go to the "Filler search" screen to enter search criteria.
+- Each face is compared to each other
+- **Closest to witness memory** is selected
 
-If the search is synthesized, this will be the process for doing so:
- * For each of the following criteria: gender, race, age, hair.
-   > If there is a witness description and there is a suspect description and the suspect is consistent with the witness description: use the witness description (could be single- or multi-valued). For example, if the witness said "white or asian" and the suspect is white, search for white or asian fillers.
-   > If there is a suspect description and it is not consistent with the witness description: use the suspect description. For example, if the witness said "asian" and suspect is while, search for white fillers.
-   > If there is a suspect description but no witness description, or vice-versa, use what you have.
-   > If there is no description for this attribute, allow any value.
- * Do not restrict the search on height or weight in a synthetic search.
+---
 
-The filler selection screen will have, as a title, "Filler selection for case #______". If there is no case number entered yet, it will read "Filler selection".
+## Sequential array
 
-On the left rail, you will see, from the top:
- * A textual description of the search criteria, constructed in a similar fashion to the witness ID descriptions in #68391808. There is an "Edit Search" button, which, if tapped, will take the user to the "Filler search" screen.
- * The witness description of the perp (if populated). If not populated, include pane but put word "None" in advisory style in place of description.
- * The suspect description, in a similar textual format. A small icon of the suspect photo should also appear (if populated). Similar "None" treatment if no suspect selected.
- * A pane of currently-selected filler photos, in the order in which they were selected. This pane is entitled "Fillers" (not what it says in the mock). If no filler photos have yet been selected, the pane says "tap photos to select fillers". The list should show photos in a grid view (hypothesis: two-wide), with the tile height chosen such that, if there are enough photos to overflow what's visible on the screen, a partial row of photos will "peek" out to provide a scrolling affordance.
+- Each face is compared against witness memory
+- Fewer false identifications
 
-If the suspect photo is tapped, it should embiggen. [No mock, but similar to the "Filler Detail" view, described below.] That embiggening should include a large suspect photo (same size as later witness presentation) and non-descriptive data about the suspect (name, date of birth, ID#). The embiggened view should have a single button, "Close".
+---
 
-When on the filler selection screen, the right side will have a scrolling list of current search results. Use "Polaroid" style from suspect photo selection. The list should show photos in a grid view (hypothesis: two-wide), with the tile height chosen such that, if there are enough photos to overflow what's visible on the screen, a partial row of photos will "peek" out to provide a scrolling affordance.
+class: center, warning
 
-If you tap a filler photo on the right side, it will embiggen into the filler detail view with the controls allowing you to [cancel] or [add filler to lineup].
+### Do you recognize this man?
 
-If a photo on the right side has already been selected for this lineup (regardless of if that photo was selected as a part of this filler selection invocation or not), it should have a "selected" state: the photo is dimmed and there's a big-ass checkbox on top of it. (Checkbox is getting smaller than in these mocks.)
+![Todd Hockney](images/hockney.jpg)
 
-If you tap a selected filler photo (whether you tap it on the left or the right), you see the embiggened "filler detail" view with the controls allowing you to [cancel] or [remove filler from lineup].
+---
 
-If the officer selects "Edit Search" near the search criteria (or if she invokes filler selection without having chosen witness or suspect details), she will see a "filler search" screen which will be populated with the most recent filler search criteria.
+class: center, warning
 
-The "filler search" screen looks similar to the "witness description" edit screen: similar controls & behavior. Note that the attached mock doesn't show a textual summary, but I think we should keep it in.
+### Do you recognize this man?
 
-Search criteria, when passed to the backend:
- * Handle attributes as "AND of IN": e.g. if "Male", race: "Black" and hair: "Brown" and "Black" are selected, the query is: gender IN (male) AND race IN (black) and hair IN (brown, black)
- * Handle values (age, height, weight) by selecting a set of photos within a comfortable range on either side (not well-defined) and then ranking for how close to the target the results are (with a distance metric for multiple attributes, with a weighting that treats age as more important than weight which is more important that height).
-   > Consider using infinite scroll for more results with further & further distance on age/height/weight.
-   > Evaluate BMI as the distance metric for height & weight.
+![Michael McManus](images/mcmanus.jpg)
 
-There is a "Done" button somewhere (to be argued about: mock has it at lower-left, the rest of our UI has it at upper-right). When it is tapped, the user returns to the lineup edit screen with the current state.
+---
 
--- fragment as:
+class: center, warning
 
-Question: how to do paging of results
+### Do you recognize this man?
 
-1. Synthesize search, show resulting photos, tap to embiggen, able to select, selected photos on left, done saves as fillers. [Don't allow entry into this flow unless witness and/or suspect has been chosen.]
+![Fred Fenster](images/fenster.jpg)
 
-2. Add checkboxes for selected photos
+---
 
-3. Ability to tap left or checked to de-select photos with embiggenizer.
+class: center, warning
 
-4. Add witness description to left.
+### Do you recognize this man?
 
-5. Add search description to left.
+![Dean Keaton](images/keaton.jpg)
 
-6. Able to edit search with searchy screen like witness description.
+---
 
-7. If filler selection is chosen when no witness or suspect description, start in search screen.
+class: center, warning
 
-1000000. Possibly in the future: Refactor sideloading UI to use this kind of UI on a helicar.
+### Do you recognize this man?
+
+![Roger 'Verbal' Kint](images/kint.jpg)
+
+---
+
+class: warning
+
+.f3[Do you recognize this man?]
+
+.f1[Yes! I recognize him!]
+
+
+--
+
+.f3[How do you know him?]
+
+.f1[I saw him commit the crime!]
+
+
+--
+
+.f3[Are you sure?]
+
+.f1[mmm...I think so. Wait, I'm not sure. No, ok, it looks like him.]
 
 
 ---
 
-# example 2
+class: inverse
+
+### Dark Design Pattern #1:
+
+#introduce an app to make the preferred behavior the default behavior
+
+???
+
+- Encourage police to use sequential arrays.
+- even though people may be averse to change
+- build the app; make it easier to do the right thing than wrong
 
 ---
 
-# example 3
+class: warning
+
+# We've got a lead!
+
+--
+
+
+- There've been a rash of similar crimes in the area
+
+
+--
+
+
+- Police have a suspect
+
+---
+
+class: image-100
+
+# Suspect Selection
+
+![Suspect selection](images/suspect-mugshot-selection-flow.png)
+
+---
+
+class: small-image
+
+
+![Suspect selection](images/suspect_mugshot_selection_2-suspect-detail.png)
+
+???
+
+- this guy has a record
+- most recent photo has goatee
+- we want to match the witness description
+
+---
+
+class: small-image
+
+
+![Suspect selection](images/suspect_mugshot_selection_3-suspect-photo-detail.png)
+
+???
+
+- choose older photo
+
+---
+
+class: small-image
+
+
+![Suspect selection](images/suspect_mugshot_selection_4-select-photo.png)
+
+???
+
+- less "accurate" photo is better: dark!
+
+---
+
+class: small-image
+
+
+![Suspect selection](images/suspect_mugshot_selection_5-select-fillers.png)
+
+
+---
+
+# Filler Selection
+
+- identical twins: too close
+- clearly different race or gender: too far
+- where's goldilocks?
+
+---
+
+
+class: small-image
+
+## Select filler photos
+
+![filler selection](images/filler-selection.png)
+
+???
+
+- based on **witness description**, not suspect picture
+
+
+---
+class: small-image
+
+## Review suspect photo
+
+
+![Suspect selection](images/filler-selection_suspect_detail.png)
+
+???
+
+- it's a modal; can't see the filler pics
+
+---
+
+class: inverse
+
+### Dark Design Pattern #2:
+
+# Don't show photo
+
+- select filler photos based on description, not (subjective) photo comparison
+- science says its better
+- similar opportunities to follow science when various descriptions (witness(es), suspect, etc.) conflict.
+
+---
+
+# The old way
+
+???
+
+- cop interviews witness, can shape recollection (memory can be faulty)
+- cop testifies, judge hears the cop's version (confidence can be overstated)
+
+---
+
+# The better way
+
+???
+
+- blind administrator
+- cop gives witness ipad, impartial repeatable instructions
+- judge sees the witness give testimony
+
+---
+
+class: small-image
+
+![Suspect selection](images/witness-state_your_name.PNG)
+
+---
+
+class: small-image
+
+![Suspect selection](images/witness-dont_recognize.PNG)
+
+---
+
+
+class: small-image
+
+![Suspect selection](images/witness-do_you_recognize.jpg)
+
+---
+
+class: small-image
+
+![Suspect selection](images/witness-do_you_recognize-certainty.jpg)
+
+---
+
+class: small-image
+
+![Suspect selection](images/witness-do_you_recognize-where.jpg)
+
+---
+
+class: inverse
+
+### Dark Design Pattern #3
+
+# Testimony w/o officer influence
+
+---
+
+class: greenbg
+
+# Conclusion
+
+
+--
+
+
+
+- .f2[Dark design is a technique (not a value claim)]
+
+
+
+--
+
+
+
+- .f2[It's not always bad]
+
+
+
+--
+
+
+
+- .f2[DON'T BE EVIL!!]
+
+
 
 ---
 
