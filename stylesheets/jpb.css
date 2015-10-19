@@ -13,8 +13,22 @@
   display: block;
 }
 
-
-.small-image img{
+.small-image img {
   width: 40%;
 }
 
+.image-100 img {
+  width: 100%;
+}
+
+.image-height-100 img {
+  height: 100%;
+}
+
+.small-text {
+  font-size: 0.8em;
+}
+
+blockquote strong {
+  font-weight: bold !important;
+}

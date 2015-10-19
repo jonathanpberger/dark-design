@@ -5,9 +5,9 @@
   font-weight: 400;
   position: absolute;
   bottom: 0;
-  background-color: #222;
-  background-color: #0d3552;
+  background-color: #333;
   color: #fcfcfc;
+  color: #eb4600;
   width: 100%;
   margin: -1em -4em; /*counteract padding on top element */
   height: 4em;
